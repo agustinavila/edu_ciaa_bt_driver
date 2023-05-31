@@ -4,9 +4,13 @@ Bluetooth driver for a Panasonic's PAN1323ETU module on a EDU-CIAA board (NXP LP
 
 ## About this project
 
-This is part of the 
+This was done as part of a university lecture (Microcontrollers) at the UNSJ (Universidad Nacional de San Juan).
+The idea is to be able to use this driver to communicate via bluetooth.
+Also, an abstraction layer is required in case the used MCU changes in the future.
 
-## PAN1323ETU used pinout
+## PAN1323ETU Module
+
+### PAN1323ETU used pinout
 
 | Connector | Pin |            Name | I/O |                 Description |
 |----------:|----:|----------------:|----:|----------------------------:|
@@ -24,5 +28,4 @@ This is part of the
 ### Relevant info
 
 SLOW_CLK_3V3 can be a digital signal in the range of 0-1.8 V.
-The slow clock's frequency accuracy must be 32.768 kHz +-250 ppm for Bluetooth
-usage (according to the Bluetooth specification).
+The slow clock's frequency accuracy must be 32.768 kHz +-250 ppm for Bluetooth usage (according to the Bluetooth specification).
